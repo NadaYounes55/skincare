@@ -1,0 +1,332 @@
+*,
+*::before,
+*::after{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;    
+}
+
+
+/* =========NAVBAR================ */
+/* اللون الأساسي المستوحى من اللوجو */
+:root {
+    --brand-pink: #d83a7d; /* درجة البينك المطابقة للوجو */
+    --hover-pink: #fdf2f7; /* لون خلفية خفيف جداً */
+}
+
+/* تنسيق الروابط */
+.navbar .nav-link {
+    color: #444 !important;
+    font-weight: 500;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover, 
+.navbar .nav-link.active {
+    color: var(--brand-pink) !important;
+}
+
+/* القائمة المنسدلة */
+.dropdown-menu {
+    border: none;
+    border-top: 3px solid var(--brand-pink);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.dropdown-item:hover {
+    background-color: var(--hover-pink);
+    color: var(--brand-pink);
+}
+
+/* مربع البحث */
+
+.search-form .form-control {
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+/* 
+.search-form .form-control:focus {
+    border-color: var(--brand-pink);
+    box-shadow: 0 0 0 0.2rem rgba(216, 58, 125, 0.1);
+} */
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 105, 180, 0.15);
+    border-color: #ff69b4;
+    background-color: #fff;
+}
+/* الأيقونات */
+.nav-icons a {
+    color: #444;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-icons a:hover {
+    color: var(--brand-pink);
+    transform: scale(1.1);
+}
+
+/* شارة السلة (البادج) */
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: var(--brand-pink);
+    color: white;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* تنسيق للموبايل */
+@media (max-width: 991px) {
+    .right-section {
+        flex-direction: column;
+        align-items: flex-start !important;
+        margin-top: 15px;
+        gap: 15px;
+    }
+    .nav-icons {
+        padding-bottom: 15px;
+    }
+}
+/* =========END NAVBAR============= */
+
+body{
+background-color: #fcbedd2f;  
+}
+
+/*========contact us===========  */
+ .contact-section{
+     text-align: center;
+     padding: 50px ; 
+     font-family: Arial, Helvetica, sans-serif;
+    }
+    .contact-section .Contact-title{
+      color: #e14083;
+      font-weight: bold; 
+      margin-bottom: 15px;
+    }
+    .contact-section .contact-desc{
+      color: #555;
+      margin-bottom: 50px;
+    }
+
+    /* =======CONTACT-FORM=========== */
+    .contact-form{
+     display: flex; 
+     flex-direction: column;
+     gap: 20px;
+     background-color: #fff;
+     padding: 40px;
+     border-radius: 15px;
+    }
+   .contact-form .form-message{
+    padding: 10px;
+    border-radius: 5px;
+    border:1px solid  #e140836f;
+    transition: 0.2s;
+   }
+   
+   .contact-form .form-message:focus{
+    outline: 2px solid  #e1408367 ;
+    }
+
+    .contact-form button{
+     background-color: #e14083; 
+     border: none;
+     padding: 10px;
+     border-radius: 5px;
+    }
+    .contact-form button a{
+     text-decoration: none;
+     color: #fff;   
+     font-weight: bold;
+    }
+
+    /* ===========contact-information================ */
+    .contact-info{
+     display: flex;
+     flex-direction: column;
+     background-color: #fff;
+     gap: 20px;
+     padding: 40px;
+     border-radius: 15px;
+    }
+    .info-box{
+     display: flex;   
+     justify-content: center;
+     gap: 10px;
+     border:1px solid  #e140836f;
+     border-radius: 5px; 
+     padding: 10px 0;
+     color: #555;
+    }
+    .info-box i{
+     color: #e14083; 
+     margin-right: 10px;  
+    }
+
+   
+    
+/* ================= FOOTER ================= */
+.beautiva-footer{
+  background-color: #fcbedd2f;
+  padding: 70px 15px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top: 1px solid #f2c6d6;
+  overflow: hidden;
+}
+
+.beautiva-footer .row{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.beautiva-footer h2{
+  color: #d83a7d;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.beautiva-footer h5{
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.beautiva-footer p{
+  color: #666;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer-contact{
+  font-size: 14px;
+  color: #555;
+}
+
+/* Lists */
+.beautiva-footer ul{
+  list-style: none;
+  padding: 0;
+}
+
+.beautiva-footer ul li{
+  margin-bottom: 10px;
+}
+
+.beautiva-footer ul li a{
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.beautiva-footer ul li a:hover{
+  color: #d83a7d;
+}
+
+/* Newsletter */
+.newsletter{
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  max-width: 100%;
+}
+
+.newsletter input{
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.newsletter button{
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: #d83a7d;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.newsletter button:hover{
+  background-color: #a63264;
+}
+
+/* Social Icons (عمودي) */
+/* Social Icons مع الاسم */
+.social-icons{
+  display: flex;
+  flex-direction: column; /* تحت بعض */
+  gap: 15px;
+}
+
+.social-icons li a{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.social-icons li a i{
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  color: #d83a7d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.social-icons li a:hover i{
+  background-color: #d83a7d;
+  color: #fff;
+}
+
+.social-icons li a:hover span{
+  color: #d83a7d;
+}
+
+
+/* Bottom */
+.footer-bottom{
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 15px;
+  border-top: 1px solid #f2c6d6;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+  .beautiva-footer{
+    text-align: center;
+  }
+
+  .newsletter{
+    flex-direction: column;
+  }
+
+  .social-icons{
+    align-items: center;
+  }
+}
+
+
+
+

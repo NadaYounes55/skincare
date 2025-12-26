@@ -1,0 +1,1258 @@
+*,
+*::before,
+*::after{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;    
+}
+
+/* =========NAVBAR================ */
+/* اللون الأساسي المستوحى من اللوجو */
+:root {
+    --brand-pink: #d83a7d; /* درجة البينك المطابقة للوجو */
+    --hover-pink: #fdf2f7; /* لون خلفية خفيف جداً */
+}
+
+/* تنسيق الروابط */
+.navbar .nav-link {
+    color: #444 !important;
+    font-weight: 500;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover, 
+.navbar .nav-link.active {
+    color: var(--brand-pink) !important;
+}
+
+/* القائمة المنسدلة */
+.dropdown-menu {
+    border: none;
+    border-top: 3px solid var(--brand-pink);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.dropdown-item:hover {
+    background-color: var(--hover-pink);
+    color: var(--brand-pink);
+}
+
+/* مربع البحث */
+
+.search-form .form-control {
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+/* 
+.search-form .form-control:focus {
+    border-color: var(--brand-pink);
+    box-shadow: 0 0 0 0.2rem rgba(216, 58, 125, 0.1);
+} */
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 105, 180, 0.15);
+    border-color: #ff69b4;
+    background-color: #fff;
+}
+/* الأيقونات */
+.nav-icons a {
+    color: #444;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-icons a:hover {
+    color: var(--brand-pink);
+    transform: scale(1.1);
+}
+
+/* شارة السلة (البادج) */
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: var(--brand-pink);
+    color: white;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* تنسيق للموبايل */
+@media (max-width: 991px) {
+    .right-section {
+        flex-direction: column;
+        align-items: flex-start !important;
+        margin-top: 15px;
+        gap: 15px;
+    }
+    .nav-icons {
+        padding-bottom: 15px;
+    }
+}
+/* =========END NAVBAR============= */
+
+
+     /* -------------PAGE 1 (( HOME ))--------------------------------- */
+/* ===========START HERO SEACTION=================== */
+.hero-section {
+  padding: 60px 40px 0;
+  background-color: #fcbedd2f;
+  overflow: hidden;
+}
+
+/* ================= TEXT ================= */
+/* ====BUTTON===== */
+.btn-skin-brand{
+ padding: 5px 20px;
+ border: 1px solid #cc407af8;
+ border-radius: 50px;
+ margin-bottom: 20px;
+ cursor: pointer;
+ background-color: #fcbedd2f;
+}
+.btn-skin-brand a{
+  text-decoration: none;
+  color: #d83a7d;
+  font-weight: 400;
+}
+
+.text-beauty {
+  animation: fadeLeft 1.1s ease forwards;
+}
+
+.text-beauty h1 {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.text-beauty h1 span {
+  color: #d83a7d;
+}
+
+.text-beauty p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #555;
+  max-width: 520px;
+}
+
+/* ================= BUTTON ================= */
+.hero-buttons .btn-shop-now {
+  padding: 10px 40px;
+  border: 2px solid #cc407af8;
+  border-radius: 50px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #cc407af8;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.hero-buttons .btn-shop-now:hover {
+  transform: scale(1.05);
+}
+.hero-buttons .btn-shop-now a{
+ text-decoration: none; 
+ color: #fff;
+}
+
+.hero-buttons .btn-see-more{
+  padding: 10px 40px;
+  border: 2px solid #cc407af8;
+  border-radius: 50px;
+  font-weight: bold;
+  background-color: #fcbedd2f;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+.hero-buttons .btn-see-more:hover{
+ transform: scale(1.1);
+}
+
+.hero-buttons .btn-see-more a{
+ text-decoration: none; 
+ color: #d83a7d;
+ font-weight: bold;
+}
+
+
+
+
+
+/* ================= IMAGE ================= */
+.photo-beauty {
+  text-align: center;
+  animation: fadeRight 1.1s ease forwards;
+}
+
+.photo-beauty img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.photo-beauty img:hover {
+  transform: scale(1.04);
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 50px 20px;
+  }
+
+  .text-beauty {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .text-beauty p {
+    margin: 0 auto 30px;
+  }
+
+  .text-beauty h1 {
+    font-size: 30px;
+  }
+
+  .hero-buttons button {
+    margin-bottom: 10px;
+  }
+}
+/* ===============END HERO SEACTION=================== */
+
+
+/* ================= START (WHY BEAUTIVA) ================= */
+.why-beautiva{
+ padding: 60px 0; 
+ background-color: #fff;  
+}
+.section-title{
+ text-align: center;  
+ margin-bottom: 15px; 
+ font-weight: bold;
+ font-family: Arial, Helvetica, sans-serif;
+}
+.section-title span{
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: bold;
+ color: #d83a7d;   
+}
+.section-desc{
+ text-align: center;
+ max-width: 650px;    
+ margin:0 auto 50px;
+ color: #555;
+ line-height: 1.7;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ====CARDS===== */
+.cards-wrapper{
+  row-gap: 30px;
+}
+
+.beautiva-card{
+background-color: #fcbedd63;
+height: 100%;
+text-align: center;
+border-radius: 20px; 
+transition: all 0.35s ease;
+}
+
+.beautiva-card img{
+ width:100%;   
+ height: 200px;
+ border-top-left-radius: 20px;
+ border-top-right-radius:20px ;
+ margin-bottom: 20px;
+}
+
+.beautiva-card h6{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+   color: #333;
+}
+
+.beautiva-card p{
+  padding: 5px;
+ font-family: Arial, Helvetica, sans-serif; 
+ color: #555;
+   line-height: 1.6;
+}
+
+.beautiva-card:hover{
+  transform: translateY(-10px);
+   box-shadow: 0 15px 30px rgba(216, 58, 125, 0.2);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-desc {
+    padding: 0 15px;
+  }
+}
+.beaty-line{
+  width: 90%;
+  margin: 30px auto;
+  border: 2px solid rgb(116, 12, 67);
+}
+/* ========END((WHY BEAUTIVA))=================== */
+
+
+/* ============== START (BEST SELLER) ================= */
+
+.best-seller{
+  padding: 20px 0;
+}
+
+/* TITLE & DESC */
+.best-seller-title{
+  color: #d83a7d;  
+  text-align: center; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.best-seller-desc{
+  text-align: center;  
+  color: #555;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 45px;
+}
+
+/* SPACING BETWEEN CARDS */
+.best-seller .col-lg-3{
+  margin-bottom: 30px;
+}
+
+/* ====== SELLER CARDS ====== */
+.seller-cards{
+  background-color: #fff;
+  padding: 25px 15px;
+  border-radius: 18px;
+  text-align: center;
+  transition: 0.4s ease;
+  height: 100%;
+  overflow: hidden;
+}
+
+.seller-cards:hover{
+  transform: translateY(-7px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  border: 1px solid #f46ea8c5;
+}
+
+/* IMAGE */
+.seller-cards img{
+  width: 100%;
+  height: 220px;
+  border-radius: 18px;
+  /* object-fit: contain; */
+  margin-bottom: 20px;
+  transition: 0.4s ease;
+}
+
+.seller-cards:hover img{
+  transform: scale(1.08);
+}
+
+/* TEXT */
+.seller-cards h6{
+  text-align: center;  
+  color: #d83a7d;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.seller-cards p{
+  text-align: center;  
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.seller-cards h4{
+  text-align: center;  
+  color: #d83a7d;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* BUTTON */
+.seller-cards button{
+  padding: 8px 28px;
+  background-color: #d83a7d;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.seller-cards button:hover{
+  background-color: #b82f69;
+}
+
+.seller-cards button a{
+ text-decoration: none; 
+ color: #fff;
+ font-weight: bold;
+}
+
+
+/* ============== END (BEST SELLER) ================= */
+
+
+/* ---------------START ((BEAUTIVA SALE ))-------------------- */
+.beautiva-sale{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #f38ab412;  */
+  background-color: #a76d853e;
+  padding: 80px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 30px;
+  margin:30px 20px;
+}
+
+
+.sale-image img{
+  width: 100%;
+  height:100%;
+  max-width: 400px;
+  object-fit: cover;
+  border-bottom-left-radius: 90px;
+  border-top-right-radius: 90px;
+  transition: all 0.5s ease;
+}
+.sale-image img:hover{
+opacity: 0.8;  
+transform:scale(1.1);
+}
+
+.sale-text{
+ display: flex;
+ flex-direction: column; 
+ justify-content: center;
+ 
+}
+.sale-text .sale-title{
+ margin-bottom: 20px;
+ letter-spacing: 1px;
+ color: #555;  
+}
+
+.sale-text .sale-off{
+font-weight: bold; 
+color: #d83a7d;
+font-family: Georgia, 'Times New Roman', Times, serif; 
+margin-bottom: 15px;
+}
+.sale-text .sale-desc{
+margin-bottom: 30px;
+color: #666;
+} 
+
+.sale-text button{
+ padding: 10px 30px; 
+ background-color:#d83a7d ;
+ border-radius: 50px;
+ border: none;
+ transition: 0.5s;
+ width: fit-content;
+ cursor: pointer;
+
+}
+.sale-text button a{
+text-decoration: none; 
+color: #fff; 
+}
+.sale-text button:hover{
+background-color: #a63264cd;  
+transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+
+  .beautiva-sale{
+    padding: 20px 15px;
+    border-radius: 20px;
+  }
+
+  .sale-text{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .sale-text button{
+    margin: auto;
+  }
+
+  .sale-image img{
+    border-radius: 30px;
+    max-height: 300px;
+  }
+}
+
+/* -------- COUNTDOWN STYLE -------- */
+.countdown{
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.time-box{
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 15px;
+  text-align: center;
+  min-width: 70px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.time-box span{
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #d83a7d;
+}
+
+.time-box small{
+  font-size: 12px;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+  .countdown{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+/* ---------------END ((BEAUTIVA SALE ))-------------------- */
+     /*----------END PAGE 1 ((HOME))------------------  */
+
+
+/* ---------START PAGE 2 ((ABOUT US))------------------ */
+
+/* ============START ((ABOUT US SECTION))======================= */
+.about-sec{
+ padding: 40px 30px;
+}
+
+.about-imag img{
+ border-radius: 20px; 
+ width: 100%; 
+ height: 350px;
+ border: 2px solid #d83a7d;
+}
+
+.about-text{
+ display: flex;
+ flex-direction: column;  
+ justify-content: center;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-text h1{
+ color: #d83a7d;
+ font-weight: bold;
+ margin-bottom: 20px;
+ 
+}
+.about-text p{
+ color: #555; 
+ margin-bottom: 20px;
+}
+
+
+.about-text button{
+ padding: 10px 40px; 
+ background-color:#d83a7d ;
+ border-radius: 50px;
+ border: none;
+ width: fit-content;
+ cursor: pointer;
+ transition: 0.5s;
+}
+.about-text button:hover{
+background-color: #831945c6;  
+transform:scale(1.1);
+}
+.about-text button a{
+color: #fff;  
+text-decoration: none;
+font-weight: bold; 
+}
+.about-text button i{
+ color: #fff; 
+}
+/* ==========END ((ABOUT US SECTION))====================== */
+
+/* =========START SECTION ((OUR ACHIEVEMENTS))================ */
+.achievement-sec{
+  background: linear-gradient(
+    rgba(243, 209, 231, 0.85),
+    rgba(244, 177, 228, 0.55)
+  ),
+  url(images/photo_2025-12-23_02-36-12.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 90px 0;
+}
+
+/* TEXT */
+.achievement-text{
+  max-width: 800px;
+  margin: 0 auto 60px;
+  padding: 0 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #020202;
+}
+
+.achievement-text h2{
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.achievement-text P{
+ color: #555; 
+}
+
+/* CARDS */
+.div-customer{
+  border: 2px solid #555;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 25px 15px;
+  background-color: rgba(255, 255, 255, 0.85);
+  transition: 0.3s ease;
+}
+
+.div-customer:hover{
+  transform: translateY(-5px);
+}
+
+/* ICON */
+.achievement-icon{
+  font-size: 38px;
+  color: #d20960;
+  margin-bottom: 12px;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.div-customer:hover .achievement-icon{
+  transform: scale(1.1);
+}
+
+/* TEXT */
+.div-customer h1{
+  color: #d20960;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.div-customer p{
+  color: #555;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+  .achievement-text p{
+    font-size: 14px;
+  }
+}
+/* =========END SECTION ((OUR ACHIEVEMENTS))================ */
+
+/* ===========START ((OUR EXPERT AND DEDICATED TEAM))============================= */
+.expert-team{
+  padding: 40px 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.expert-team .expert-title{
+margin-bottom: 20px;
+font-weight: bold;
+color: #a63264;
+}
+
+.teams img{
+ width: 100%;
+ height: auto;  
+ border-radius: 5px;
+ margin-bottom: 15px;
+}
+.teams h4{
+ font-weight: bold; 
+ color: #a63264;
+}
+.teams p{
+ color: #555; 
+}
+/* ======== END ((OUR EXPERT AND DEDICATED TEAM))==================== */
+
+
+/* ================START (( WHAT CAN YOU EXPECT FROM US))===================== */
+.expect-sec{
+  padding: 80px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8b0cf70;
+  margin-bottom: 50px;
+}
+
+/* IMAGE */
+.expect-photo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.expect-photo img{
+  width: 100%;
+  max-width: 550px; /* أقصى حجم للصورة على الديسكتوب */
+  height: auto;
+  object-fit: cover; /* تخلي الصورة متناسقة */
+  border-radius: 5px;
+  border-top-right-radius: 100px;
+}
+
+/* TEXT */
+.expect-desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.expect-desc h2{
+  font-weight: bold;
+}
+
+.expect-desc p{
+  color: #555;
+  max-width: 600px;
+}
+
+/* BUTTON */
+.expect-desc button{
+  padding: 12px 45px;
+  background-color: #b52060;
+  border-radius: 50px;
+  border: none;
+  width: fit-content;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.expect-desc button:hover{
+  background-color: #8b4062bf;
+  transform: scale(1.05);
+}
+
+.expect-desc button a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Scroll Animation */
+.reveal,
+.reveal-left,
+.reveal-right{
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.reveal{
+  transform: translateY(60px);
+}
+
+.reveal-left{
+  transform: translateX(-60px);
+}
+
+.reveal-right{
+  transform: translateX(60px);
+}
+
+.reveal.active,
+.reveal-left.active,
+.reveal-right.active{
+  opacity: 1;
+  transform: translate(0);
+}
+
+/* Responsive */
+@media (max-width: 992px){
+  .expect-photo img{
+    max-width: 100%;
+  }
+  .expect-desc p{
+    font-size: 14px;
+    text-align: center;
+  }
+}
+/* =================END(( WHAT CAN YOU EXPECT FROM US))====================== */
+    /* -----------END PAGE 2 ((ABOUT US))------------------ */
+
+
+    /* --------START PAGE3 ((SKINCARE PRODUCTS ))----------- */
+
+    /* ==========START SECTION(( SKINCARE PRODUCTS ))====================== */
+    .skincare-products{
+      padding:20px 70px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .products-title{
+     text-align: center; 
+     padding: 30px 0;
+    }
+
+    .products-title h1{
+     color: #d64483;
+     font-weight: bold;
+
+    }
+    .products-title p{
+      color: #555;
+    }
+    
+    /* ===LINES==== */
+    .products-title .big-line{
+     width: 20%;
+     margin: 10px auto; 
+     border-top: 3px solid  #9b0c4a;
+     }
+
+    .products-title .small-line{
+     width: 10%;
+     margin: 10px auto; 
+     border-top: 3px solid  #9b0c4a;
+    }
+
+    /* ======CARDS======== */
+    .card-products{
+     border-radius: 10px; 
+     border:1px solid #a63264; 
+     padding: 30px;
+     text-align: center;
+     background-color: #fff3f7a5;
+     margin-bottom: 30px;
+    
+    }
+    
+    .card-products .card-img-top{
+     margin-bottom: 15px; 
+    }
+
+    .card-body .card-title{
+      color: #a63264;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .card-body .card-text{
+     color: #555; 
+     font-weight: bold;
+     margin-bottom: 10px;
+    }
+    .card-body .icons{
+     color: #a63264;
+    }
+    .card-body .card-price{
+     color: #555; 
+     font-weight: bold;
+     margin: 10px 0;
+    }
+    .card-body .btn-add-cart{
+     padding: 10px 30px;
+     background-color: #a63264;
+     border: none;
+     border-radius: 50px; 
+     transition: 0.5s;
+    }
+    .card-body .btn-add-cart:hover{
+      background-color: #722e4ac0;
+      transform: scale(1.1);
+    }
+    .card-body .btn-add-cart a{
+     text-decoration: none;
+     color: #fff; 
+     font-weight: bold;
+    }
+
+    .div-cleansers .cleanser-title{
+     font-weight: bold; 
+     color: #a63264;
+     margin-bottom: 20px;
+    }
+
+    .Products-line{
+      width: 80%;
+      margin:10px auto;
+    }
+    
+    .div-sunscreen .sunscreen-title{
+     font-weight: bold; 
+     color: #a63264;
+     margin-bottom: 20px;
+    }
+    .div-moisturizer .moisturizer-title{
+      font-weight: bold; 
+     color: #a63264;
+     margin-bottom: 20px;
+    }
+           /* --------END PAGE3 ((SKINCARE PRODUCTS ))--------- */
+
+
+        /* -------------START PAGE 4 ((CART ))------------------------- */
+   /* ======CART========= */
+.cart-section{
+  padding:70px 50px 30px  50px;
+  background-color: #fcbedd2f;
+}
+
+.cart-images .big-imag{
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  transition: all 0.5s ease;
+}
+.cart-images .big-imag:hover{
+ transform: scale(1.08);
+  border: 2px solid #a63264;
+}
+
+.centella-images{
+  display: flex;
+  gap: 10px;
+}
+
+.centella-images .small-imag{
+  width: 23%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.centella-images .small-imag:hover{
+  transform: scale(1.05);
+  border: 2px solid #a63264;
+}
+
+.cart-desc{
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cart-desc h3,
+.cart-desc h5{
+  color: #a63264;
+}
+
+.cart-desc p{
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* ===== BUTTONS ===== */
+.cart-buttons{
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.add-cart{
+  padding: 12px 35px;
+  background-color: #a63264;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.add-cart:hover{
+  transform: scale(1.04);
+}
+
+
+/* ===== QUANTITY ===== */
+.quantity{
+  display: flex;
+  align-items: center;
+  border: 2px solid #a63264;
+  border-radius: 6px;
+}
+
+.quantity button{
+  padding: 10px 30px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #a63264;
+}
+
+.quantity span{
+  padding: 0 15px;
+  font-weight: bold;
+  color: #a63264;
+}
+
+/* ===== ACCORDION ===== */
+.cart-desc h6{
+  cursor: pointer;
+  color: #a63264;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
+.accordion-content{
+  display: none;
+  font-size: 14px;
+  color: #555;
+  padding: 10px 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width:768px){
+  .cart-buttons{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.cart-line{
+  width: 90%;
+  margin: 40px auto;
+  color: #9b0c4a;
+}
+/* =================END SECTION(( CART ))====================== */
+
+/* ===========START SECTION ((you may also like ))================== */
+.like-sec{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 50PX;
+}
+.like-sec h1{
+  color: #a63264;
+  margin: 50px 0;
+  font-weight: bold;
+}
+.like-sec img{
+ width: 100%;
+ height: auto; 
+ border-radius: 15px;
+ margin-bottom: 15px;
+}
+.like-sec p{
+  color: #555;
+}
+.like-sec h5{
+ color: #a63264;
+ font-weight: bold;
+}
+
+
+
+
+/* ================= FOOTER ================= */
+.beautiva-footer{
+  background-color: #fcbedd2f;
+  padding: 70px 15px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top: 1px solid #f2c6d6;
+  overflow: hidden;
+}
+
+.beautiva-footer .row{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.beautiva-footer h2{
+  color: #d83a7d;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.beautiva-footer h5{
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.beautiva-footer p{
+  color: #666;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer-contact{
+  font-size: 14px;
+  color: #555;
+}
+
+/* Lists */
+.beautiva-footer ul{
+  list-style: none;
+  padding: 0;
+}
+
+.beautiva-footer ul li{
+  margin-bottom: 10px;
+}
+
+.beautiva-footer ul li a{
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.beautiva-footer ul li a:hover{
+  color: #d83a7d;
+}
+
+/* Newsletter */
+.newsletter{
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  max-width: 100%;
+}
+
+.newsletter input{
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.newsletter button{
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: #d83a7d;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.newsletter button:hover{
+  background-color: #a63264;
+}
+
+/* Social Icons (عمودي) */
+/* Social Icons مع الاسم */
+.social-icons{
+  display: flex;
+  flex-direction: column; /* تحت بعض */
+  gap: 15px;
+}
+
+.social-icons li a{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.social-icons li a i{
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  color: #d83a7d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.social-icons li a:hover i{
+  background-color: #d83a7d;
+  color: #fff;
+}
+
+.social-icons li a:hover span{
+  color: #d83a7d;
+}
+
+
+/* Bottom */
+.footer-bottom{
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 15px;
+  border-top: 1px solid #f2c6d6;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+  .beautiva-footer{
+    text-align: center;
+  }
+
+  .newsletter{
+    flex-direction: column;
+  }
+
+  .social-icons{
+    align-items: center;
+  }
+}
+
