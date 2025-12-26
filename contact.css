@@ -156,19 +156,23 @@ background-color: #fcbedd2f;
      gap: 20px;
      padding: 40px;
      border-radius: 15px;
+     
     }
     .info-box{
      display: flex;   
      justify-content: center;
+     align-items: center;
      gap: 10px;
      border:1px solid  #e140836f;
      border-radius: 5px; 
-     padding: 10px 0;
+     padding: 15px 0;
      color: #555;
+   
     }
     .info-box i{
      color: #e14083; 
-     margin-right: 10px;  
+     margin-right: 10px; 
+    
     }
 
    
