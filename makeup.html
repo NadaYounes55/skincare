@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Up</title>
+    <!-- ====FAV ICON====== -->
+    <link rel="icon" type="image/x-icon" href="images/photo_2025-12-26_04-12-28-removebg-preview.png">
+    <!-- ===font awesome link==== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ======BOOTSTRAP LINK======== -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <!-- ====STYLE CSS======= -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--==============NAVBAR==================== -->
+   <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#">  
+      <img src="./images/photo_2025-12-22_21-43-38-removebg-preview.png" width="60px" alt="Logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" target="_blank">Home</a>
+        </li>
+        
+         <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Skin Care</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#cleenser">Cleansers</a></li>
+            <li><a class="dropdown-item" href="#sunsceens">Sunscreens</a></li>
+            <li><a class="dropdown-item" href="#moisturizer">Moisturizers</a></li>
+            <li><a class="dropdown-item" href="#serums">Serums</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Hair Care</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Shampoo</a></li>
+            <li><a class="dropdown-item" href="#">Oils</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Make Up</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#face-makeup">Face MakeUp</a></li>
+            <li><a class="dropdown-item" href="#eyes-makup">Eyes MakeUp</a></li>
+            <li><a class="dropdown-item" href="#lipsticks">LipSticks & Lip Gloss</a></li>
+           
+          </ul>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link " href="contact.html" target="_blank">Contact</a>
+        </li>
+
+
+      </ul>
+
+      <div class="d-flex align-items-center gap-3">
+        <form class="search-box d-flex" role="search">
+          <input class="form-control rounded-pill" type="search" placeholder="Search..." aria-label="Search">
+        </form>
+
+        <div class="nav-icons d-flex gap-3">
+          <a href="#"><i class="fa-regular fa-heart"></i></a>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="login.html"><i class="fa-regular fa-user"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav> 
+<!-- =============END NAVBAR=========================== --> 
+
+
+<!-- ==============START HERO SECTION (( MAKE UP))========================= -->
+<section class="makeup-section d-flex align-items-center">
+  <div class="container-fluid">
+    <div class="row align-items-center justify-content-center text-center text-lg-start">
+
+      <div class="col-lg-4 col-md-5 col-sm-12 mb-4 mb-lg-0 makeup-image">
+        <img src="images/photo_2025-12-29_21-22-05-removebg-preview.png"
+             class="img-fluid mx-auto d-block"
+             alt="Makeup">
+      </div>
+
+      <div class="col-lg-8 col-md-7 col-sm-12 makeup-desc">
+        <h1>Explore Our MakeUp Collection</h1>
+
+        <p>
+          At Beautiva, we believe makeup is a form of self-expression. Our makeup collection is designed to empower you with rich colors, flawless formulas, and beauty you can trust.
+        </p>
+       <button class="btn-makeup-hero"><a href="#products">SHOP NOW</a> </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- =================END HERO SECTION (( MAKE UP))========================= -->
+
+
+<!-- ============START SECTION (( CATEGORIES ))  ==================== -->
+<!-- ============ START SECTION (( CATEGORIES SLIDER )) ==================== -->
+<section class="categories-sec" id="categories">
+  <h2 class="categories-title">Shop By Categories</h2>
+  <hr class="line1-category">
+  <hr class="line2-category">
+
+  <div class="container">
+    <div id="categoriesSlider" class="carousel slide" data-bs-ride="carousel">
+      
+      <!-- SLIDER CONTENT -->
+      <div class="carousel-inner">
+
+        <!-- SLIDE 1 -->
+        <div class="carousel-item active mt-5">
+          <div class="row justify-content-center">
+
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div class="Categories-images">
+                <img src="images/photo_2025-12-30_03-20-38.jpg" alt="MakeUp Brushes">
+                <p>MakeUp Brushes</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div class="Categories-images">
+                <img src="images/photo_2025-12-30_03-44-12.jpg" alt="Lipsticks">
+                <p>LipSticks</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div class="Categories-images">
+                <img src="images/photo_2025-12-30_03-36-11.jpg" alt="Eyeliner">
+                <p>Eyeliner</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="carousel-item  mt-5">
+          <div class="row justify-content-center">
+
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div class="Categories-images">
+                <img src="images/photo_2025-12-30_03-37-57.jpg" alt="Moisturizer">
+                <p>Moisturizer</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div class="Categories-images">
+                <img src="images/photo_2025-12-30_03-45-33.jpg" alt="Foundation">
+                <p>Foundation</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div class="Categories-images">
+                <img src="images/photo_2025-12-30_03-51-25.jpg" alt="Eye Shadow">
+                <p>Eye Shadow</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CONTROLS -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#categoriesSlider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#categoriesSlider" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </div>
+</section>
+<!-- ============ END SECTION (( CATEGORIES SLIDER )) ==================== -->
+
+
+<!-- ===================START ((OUR PRODUCTS)) ============================ -->
+ <section class="products-makeup mb-4" id="products">
+ <h2 class="title-sec">Our Products</h2>  
+
+ <div class="container">
+  <!-- =========Face MakeUp=========== -->
+  <div class="row products-rows"  id="face-makeup">
+    <h1>Face MakeUp</h1>
+    <div class="col-lg-3 col-md-3 col-sm-12  mb-4">
+     <div class="face-div">
+      <img src="images/photo_2025-12-30_00-00-41.jpg" alt="">
+      <h4>Foundation</h4>
+       <span class="icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+      </span>
+      <h3>$50</h3>
+      <button><a href="#">Add To Card</a></button>
+       
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-12 mb-4">
+     <div class="face-div">
+      <img src="images/photo_2025-12-30_05-13-24.jpg" alt="Powder">
+      <h4> Powder </h4>
+       <span class="icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+      </span>
+      <h3>$90</h3>
+      <button><a href="#">Add To Card</a></button>
+     </div>
+    
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-12 mb-4">
+     <div class="face-div">
+      <img src="images/photo_2025-12-30_05-19-53.jpg" alt="Primer">
+      <h4> Primer </h4>
+       <span class="icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+      </span>
+      <h3>$9.99</h3>
+      <button><a href="#">Add To Card</a></button>
+     </div>
+    </div>
+
+     <div class="col-lg-3 col-md-3 col-sm-12 mb-4">
+     <div class="face-div">
+      <img src="images/photo_2025-12-30_05-22-32.jpg" alt="Blush">
+      <h4> Blush </h4>
+       <span class="icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+      </span>
+      <h3>$500</h3>
+      <button><a href="#">Add To Card</a></button>
+     </div>
+    </div>
+</div>
+
+<hr class="line-products">
+
+<!-- ===========Eye MakeUp=================== -->
+ <div class="row products-rows" id="eyes-makup">
+    <h1>Eyes MakeUp</h1>
+    <div class="col-lg-3 col-md-3 col-sm-12  mb-4">
+     <div class="face-div">
+      <img src="images/photo_2025-12-30_05-54-55.jpg" alt="Liquid Eyeliner">
+      <h4> Liquid Eyeliner </h4>
+       <span class="icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+      </span>
+      <h3>$130</h3>
+      <button><a href="#">Add To Card</a></button>
+     </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-12 mb-4">
+     <div class="face-div">
+      <img src="images/photo_2025-12-30_05-56-56.jpg" alt="Eyeshadow Primer">
+      <h4> Eyeshadow Primer</h4>
+       <span class="icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+      </span>
+      <h3>$70</h3>
+      <button><a href="#">Add To Card</a></button>
+     </div>
+    
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-12 mb-4">
+     <div class="face-div">
+      <img src="images/photo_2025-12-30_05-58-42.jpg" alt=" Eyeshadow Palette">
+      <h4> Eyeshadow Palette </h4>
+       <span class="icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+      </span>
+      <h3>$5.99</h3>
+      <button><a href="#">Add To Card</a></button>
+     </div>
+    </div>
+
+     <div class="col-lg-3 col-md-3 col-sm-12 mb-4">
+     <div class="face-div">
+      <img src="images/photo_2025-12-30_06-00-10.jpg" alt="Tubing Mascara">
+      <h4>Tubing Mascara</h4>
+       <span class="icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            
+      </span>
+      <h3>$500</h3>
+      <button><a href="#">Add To Card</a></button>
+     </div>
+    </div>
+</div>
+<hr class="line-products">
+
+<!-- ===========LipSticks=================== -->
+ <div class="row products-rows" id="lipsticks">
+    <h1>LipSticks & Lip Gloss</h1>
+    <div class="col-lg-3 col-md-3 col-sm-12  mb-4">
+     <div class="face-div">
+      <img src="images/photo_2025-12-30_18-31-34.jpg" alt="lip gloss">
+      <h4>Lip Gloss  </h4>
+       <span class="icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+      </span>
+      <h3>$5.99</h3>
+      <button><a href="#">Add To Card</a></button>
+     </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-12 mb-4">
+     <div class="face-div">
+      <img src="images/photo_2025-12-30_18-35-54.jpg " alt="lip stick">
+      <h4>LipStick</h4>
+       <span class="icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+      </span>
+      <h3>$7.99</h3>
+      <button><a href="#">Add To Card</a></button>
+     </div>
+    
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-12 mb-4">
+     <div class="face-div">
+      <img src="images/photo_2025-12-30_18-38-34.jpg" alt=" lip gloss">
+      <h4>Lip Gloss  </h4>
+       <span class="icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+      </span>
+      <h3>$3.99</h3>
+      <button><a href="#">Add To Card</a></button>
+     </div>
+    </div>
+
+     <div class="col-lg-3 col-md-3 col-sm-12 mb-4">
+     <div class="face-div">
+      <img src="images/photo_2025-12-30_18-39-47.jpg" alt="LipStick">
+      <h4>LipStick </h4>
+       <span class="icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            
+      </span>
+      <h3>$200</h3>
+      <button><a href="#">Add To Card</a></button>
+     </div>
+    </div>
+</div>
+</div>
+</section>
+<!-- ================END ((OUR PRODUCTS)) =================================== -->
+
+<!-- ============ START (MAKEUP TIPS) ============ -->
+<section class="makeup-tips py-5 mb-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- TEXT -->
+      <div class="col-lg-6 col-md-12  mb-4">
+        <h2 class="mb-3">Makeup Tips for a Flawless Look:</h2>
+        <p class="mb-4">
+          Simple beauty tips to help you choose the right makeup, enhance your features,
+          and feel confident every day.
+        </p>
+
+        <ul class="list-unstyled">
+          <li class="mb-3">
+             <strong>Choose the right foundation:</strong> Match your foundation to your skin tone for a natural finish.
+          </li>
+          <li class="mb-3">
+            <strong>Define your eyes:</strong> Use soft shades for daytime and bold colors for night looks.
+          </li>
+          <li class="mb-3">
+             <strong>Perfect your lips:</strong> Nude shades for daily wear, bold colors for special occasions.
+          </li>
+          <li>
+             <strong>Set your makeup:</strong> Finish with setting powder or spray for long-lasting makeup.
+          </li>
+        </ul>
+        <button class="btn-makeup-tips"><a href="#categories">Explore Make Up</a></button> 
+        
+      </div>
+
+        <!-- IMAGE -->
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0  image-makeup-tips">
+        <img src="images/photo_2025-12-30_18-57-51-removebg-preview.png  " class="img-fluid rounded-4" alt="Makeup Tips">
+      </div>
+  </div>
+  </div>
+</section>
+<!-- ============ END (MAKEUP TIPS) ============ -->
+
+
+
+<!-- ================= START FOOTER ================= -->
+<footer class="beautiva-footer">
+  <div class="container">
+    <div class="row">
+
+      <!-- Brand -->
+      <div class="col-lg-4 col-md-6 col-sm-12 footer-brand">
+
+       <a class="" href="#">
+        <img src="images/photo_2025-12-22_21-43-38-removebg-preview.png" width="90px" alt="Logo">
+       </a>
+
+        <!-- <h2>Beautiva</h2> -->
+        <p>
+          We create clean beauty products, specially made for your skin
+          to look healthy, fresh and glowing.
+        </p>
+    
+        <span class="footer-contact">📞 000-123-4567</span><br>
+        <span class="footer-contact">✉️ info@beautiva.com</span>
+       </div>
+
+      <!-- About Us -->
+      <div class="col-lg-2 col-md-6 col-sm-12">
+        <h5>About Us</h5>
+        <ul>
+          <li><a href="#">Story</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Giving Back</a></li>
+          <li><a href="#">Partnership</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="col-lg-2 col-md-6 col-sm-12">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Returns & Exchanges</a></li>
+          <li><a href="#">Help & FAQ</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Offers</a></li>
+          <li><a href="#">Store Locator</a></li>
+        </ul>
+      </div>
+
+      <!-- Service -->
+      <div class="col-lg-2 col-md-6 col-sm-12">
+        <h5>Service</h5>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Rewards</a></li>
+        </ul>
+      </div>
+
+      <!-- Socials -->
+      <div class="col-lg-2 col-md-6 col-sm-12">
+  <h5>Socials</h5>
+  <ul class="social-icons">
+    <li>
+      <a href="#">
+        <i class="fa-brands fa-facebook-f"></i>
+        <span>Facebook</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fa-brands fa-twitter"></i>
+        <span>Twitter</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fa-brands fa-linkedin-in"></i>
+        <span>LinkedIn</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="#">
+        <i class="fa-brands fa-youtube"></i>
+        <span>YouTube</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Beautiva. All Rights Reserved.
+  </div>
+</footer>
+<!-- ================= END FOOTER ================= -->
+
+
+
+
+
+
+
+
+
+<script src="bootstrap/bootstrap.bundle.min.js"></script>    
+</body>
+</html>

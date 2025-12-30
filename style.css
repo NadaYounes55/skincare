@@ -1100,6 +1100,218 @@ color: #a63264;
 }
 
 
+/* -------------START PAGE 5 ((MAKE UP ))------------------------- */
+
+
+/* ============START HERO SECTION (( MAKE UP))===================== */
+.makeup-section{
+  background-color: #efc9da;
+  min-height: 95vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.makeup-desc h1{
+  color: #a82960;
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.makeup-desc p{
+ color: #333;
+ margin-bottom: 20px;
+}
+
+.btn-makeup-hero{
+ background-color: #a82960;
+ padding: 10px 30px;
+ border: none;
+ border-radius: 5px;
+ margin-bottom: 10px;
+ transition: 0.5s;
+}
+.btn-makeup-hero:hover{
+ background-color: #691c3d91; 
+ transform: translateY(-2px);
+}
+
+.btn-makeup-hero a{
+ text-decoration: none;
+ color: #f1c1d6;
+ font-weight: bold;
+}
+/* ==============END HERO SECTION (( MAKE UP))=================== */
+
+
+/* =============START SECTION (( CATEGORIES ))  ===================== */
+/* ============= START CATEGORIES SLIDER ============= */
+.categories-sec{
+  padding: 40px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.categories-title{
+  text-align: center;
+  color: #a63264;
+  font-weight: bold;
+}
+
+.line1-category{
+  width: 20%;
+  margin: 15px auto;
+  border: 1px solid #7e0c3d;
+}
+
+.line2-category{
+  width: 10%;
+  margin: 0 auto 30px;
+  border: 1px solid #7e0c3d;
+}
+
+.Categories-images{
+  text-align: center;
+}
+
+.Categories-images img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #a63264;
+  margin-bottom: 10px;
+  transition: 0.3s ease;
+}
+
+.Categories-images img:hover{
+  transform: scale(1.08);
+}
+
+.Categories-images p{
+  font-weight: bold;
+  color: #740a3a;
+}
+
+/* Slider arrows color */
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+  filter: invert(1);
+}
+/* ============= END CATEGORIES SLIDER ============= */
+
+
+
+/* =============START OUR PRODUCTS================== */
+.products-makeup .title-sec{
+ text-align: center;
+ color: #a63264;
+ margin-bottom: 40px;
+ font-weight: bold;
+}
+
+.products-rows h1{
+ color: #641137; 
+ margin-bottom: 35px;
+}
+
+.face-div{
+ text-align: center;
+ border: 1px solid #740a3a;
+ border-radius: 15px; 
+ transition: 0.3s;
+}
+
+.face-div:hover{
+  transform: translateY(-3px);
+   box-shadow: 0 15px 30px rgba(216, 58, 125, 0.2);
+
+}
+
+.face-div img{
+ width: 100%; 
+ height: auto; 
+ margin-bottom: 10px;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+}
+
+ .face-div h4{
+  font-weight: bold;
+   /* color: #a63264; */
+ }
+ .face-div i{
+  color: #9a0d4a;
+  margin-bottom: 10px;
+ }
+
+ .face-div h3{
+  font-weight: bold;
+  margin-bottom: 10px;
+ }
+
+
+ .face-div button{
+  background-color: #95104a;
+  padding: 8px 30px;
+  border: none;
+  border-radius: 50px;
+  margin-bottom: 15px;
+  transition: 0.5s;
+ }
+ .face-div button:hover{
+  background-color: #540427;
+  transform: translateY(-2px);
+ }
+ .face-div button a{
+  text-decoration: none;
+  color: #ffffffd8;
+  font-weight: bold;
+ }
+
+ .line-products{
+  width: 90%;
+  margin: 30px auto;
+  border: 1px solid #7e0c3d;
+ }
+ /* =============END OUR PRODUCTS=================== */
+ 
+
+
+ /* ============== START (MAKEUP TIPS) ========================== */
+.makeup-tips {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff5f8;
+}
+
+.makeup-tips h2 {
+  font-weight: bold;
+  color: #a71554;
+}
+
+.makeup-tips p {
+  color: #555;
+}
+.image-makeup-tips img{
+ width: 100%; 
+ height: auto;
+}
+
+.btn-makeup-tips{
+ padding: 10px 25px;
+ background-color: #a71554;
+ border: none;
+ border-radius: 5px;
+ transition: 0.3s;
+}
+.btn-makeup-tips:hover{
+  transform: translateY(-2px);
+  background-color: #6f123a;
+}
+.btn-makeup-tips a{
+  text-decoration: none;
+  color: #f4cedf;
+  font-weight: bold;
+}
+/* ===========END (MAKEUP TIPS) ======================= */
+
 
 
 /* ================= FOOTER ================= */
