@@ -1464,7 +1464,8 @@ border-top-right-radius: 15px;
   }
 
   .social-icons{
-    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
   }
 }
 

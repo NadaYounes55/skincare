@@ -326,7 +326,8 @@ background-color: #fcbedd2f;
   }
 
   .social-icons{
-    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
   }
 }
 
